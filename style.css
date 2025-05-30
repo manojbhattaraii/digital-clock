@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@font-face {
+  font-family: 'Digital7';
+  src: url('fonts/digital-7.ttf') format('truetype');
+}
+.clock{
+    display: flex;
+ font-family: 'Digital7', monospace;
+  font-weight: 100;
+  font-size: 8rem;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    border: solid bla;
+}
+.cont{
+    background-color: black;
+    display: flex;
+    border:solid 7px black;
+    border-radius: 20px;
+    height: 125px;
+    width: 397px;
+}
+#minute,#hour{
+  
+  width: 120px;
+  height: 120px ;
+}
+
+
+
+#second{
+    font-size: 3.8rem;
+    width: 60px;
+    height:60px;
+    position: relative;
+    top: 56px;
+    left: 2px;
+}
+.circle-con{
+    margin: 25px 0 0 0 ;
+}
+.clock .circle{
+    height: 20px;
+    width: 13px;
+    margin: 10px;
+    border-radius: 20%;
+    
+}
+.toggle{
+    background-color:white;
+}
+#ap{
+    font-size: 3rem;
+    width: 45px;
+    height:40px;
+    position: relative;
+    bottom: 8px;
+    margin: 4px;
+}
+#error{
+    display: none;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+.settime{
+    background-color: white;
+    height: 40vh;
+    border: 1px grey sold;
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    width: 20vw;
+    text-align: center;
+
+}
+body h1{
+    color: black;
+    margin: 20px;
+    font-size: 3rem;
+    position: absolute;
+    font-weight: bolder;
+  
+}
+.settime h2 {
+    color:black;
+    text-align: center;
+    margin: 8px 0;
+
+}
+.settime div{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.settime div input{
+    margin: 4px 0;
+        border: 2px solid #ddd;
+        padding: 5px;
+        border-radius: 3px;
+}
+.settime div button{
+    border:  black none 1px;
+    border-radius: 5px;
+    margin: 4px 0;
+    padding: 7px 10px;
+    background-color: black;
+    color: white;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+.settime div button:hover{
+    border:solid;
+    background: white;
+    color: black;
+}
+.settime div button:active{
+    transform: scale(0.9);
+}
