@@ -14,7 +14,7 @@ A stylish and interactive digital clock that not only displays the current time 
 
 > 
 
-![Digital Clock Screenshot](screenshot.png)
+![Digital Clock Screenshot](Screenshot 2025-09-01 191725.png)
 
 ## 🚀 Live Demo
 
