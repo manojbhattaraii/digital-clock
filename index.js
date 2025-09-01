@@ -51,14 +51,17 @@ const tme =  () => {
   else if(hs<=12){
 document.getElementById("hour").innerHTML = hs;
   }
-   else {
-    document.getElementById("hour").innerHTML = "1";
-    let a = document.getElementById("ap").textContent;
+  else if(hs<11){
+     let a = document.getElementById("ap").textContent;
     if (a == "AM") {
       document.getElementById("ap").innerHTML = "PM";
-    } else {
+    } else if( a == "PM") {
       document.getElementById("ap").innerHTML = "AM";
     }
+  }
+   else {
+    document.getElementById("hour").innerHTML = "1";
+   
   }
 };
 
