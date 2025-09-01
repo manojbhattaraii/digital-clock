@@ -12,31 +12,35 @@ document.getElementById("set").onclick = () => {
     document.getElementById("minute").innerHTML = m;
     document.getElementById("second").innerHTML = s;
     document.getElementById("ap").innerHTML = ap;
-  
-};
+
+  };
 }
 
-const tme =  () => {
-    //for blinking dot
+const tme = () => {
+  //for blinking dot
   document.getElementById("c2").classList.toggle("toggle")
   document.getElementById("c1").classList.toggle("toggle")
   let hs = Number(document.getElementById("hour").textContent);
   let ms = Number(document.getElementById("minute").textContent);
   let ss = Number(document.getElementById("second").textContent);
-
+  let apm = document.getElementById("ap").textContent;
+  if ( hs ==12 && ms==0 && ss==0){
+    document.getElementById("ap").innerHTML = (apm ==="AM")? "PM" : "AM";
+    console.log("hii")
+  }
   ss++
-   if (ss <= 9) {
+  if (ss <= 9) {
     document.getElementById("second").innerHTML = "0" + ss;
   }
-   else if (ss < 60) {
+  else if (ss < 60) {
     document.getElementById("second").innerHTML = ss;
   } else {
     document.getElementById("second").innerHTML = "00";
     ms++;
   }
   //minute
-    if (ms <= 9) {
-    document.getElementById("minute").innerHTML = "0"+ms;
+  if (ms <= 9) {
+    document.getElementById("minute").innerHTML = "0" + ms;
   }
   else if (ms < 60) {
     document.getElementById("minute").innerHTML = ms;
@@ -46,23 +50,18 @@ const tme =  () => {
   }
   //hour
   if (hs <= 9) {
-    document.getElementById("hour").innerHTML = "0"+hs;
+    document.getElementById("hour").innerHTML = "0" + hs;
   }
-  else if(hs<=12){
-document.getElementById("hour").innerHTML = hs;
+  else if (hs <= 12 ) {
+    document.getElementById("hour").innerHTML = hs;
+      
   }
-  else if(hs<11){
-     let a = document.getElementById("ap").textContent;
-    if (a == "AM") {
-      document.getElementById("ap").innerHTML = "PM";
-    } else if( a == "PM") {
-      document.getElementById("ap").innerHTML = "AM";
-    }
-  }
-   else {
+
+  else {
     document.getElementById("hour").innerHTML = "1";
-   
+     
   }
+
 };
 
 setInterval(tme, 1000);
