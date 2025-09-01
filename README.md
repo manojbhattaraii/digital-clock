@@ -20,7 +20,7 @@ A stylish and interactive digital clock that not only displays the current time 
 
 > 
 
-[🌐 View Live Demo](https://your-live-demo-link.com)
+[🌐 View Live Demo](https://manojbhattaraii.github.io/digital-clock/)
 
 ## 🧰 Tech Stack
 
