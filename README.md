@@ -7,7 +7,6 @@ A stylish and interactive digital clock that not only displays the current time 
 - ⏰ **Real-time Clock Display**
 - 🛠️ **Set Custom Time**
 - 💅 **Attractive & Responsive UI**
-- 🌙 Optional **Dark/Light Theme** *(if applicable)*
 - 🖥️ Works in all modern browsers
 
 ## 📸 Screenshot
