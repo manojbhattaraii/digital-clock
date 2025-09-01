@@ -12,13 +12,13 @@ A stylish and interactive digital clock that not only displays the current time 
 
 ## 📸 Screenshot
 
-> *(Add a screenshot here if you have one — this really helps!)*
+> 
 
 ![Digital Clock Screenshot](screenshot.png)
 
 ## 🚀 Live Demo
 
-> *(Add link here if hosted on GitHub Pages, Netlify, etc.)*
+> 
 
 [🌐 View Live Demo](https://your-live-demo-link.com)
 
@@ -26,7 +26,7 @@ A stylish and interactive digital clock that not only displays the current time 
 
 - **HTML5**
 - **CSS3**
-- **Vanilla JavaScript (ES6)**
+- **JavaScript**
 
 ## 📦 How to Use
 
