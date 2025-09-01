@@ -54,7 +54,7 @@ document.getElementById("hour").innerHTML = hs;
    else {
     document.getElementById("hour").innerHTML = "1";
     let a = document.getElementById("ap").textContent;
-    if (a == "Am") {
+    if (a == "AM") {
       document.getElementById("ap").innerHTML = "PM";
     } else {
       document.getElementById("ap").innerHTML = "AM";
